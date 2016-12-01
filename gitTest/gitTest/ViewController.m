@@ -17,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSLog(@"test");
+    UIImageView *imageView =[[UIImageView alloc] initWithFrame:self.view.bounds];
+    [imageView sd_setImageWithURL:[NSURL URLWithString:@"http://pic12.nipic.com/20110108/6091831_083033006193_2.jpg"] placeholderImage:nil];
+    [self.view addSubview:imageView];
 }
 
 @end
